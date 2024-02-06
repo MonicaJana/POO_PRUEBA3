@@ -117,8 +117,10 @@ public class retiro extends JFrame {
                     String mensaje= "Su retiro es valido!";
                     l1.setText(mensaje);
                 }else{
-                    setUndecorated(true);
                     JOptionPane.showMessageDialog(null,"SALDO INSUFICIENTE!");
+                    l1.setText("");
+                    ingreso.setText("");
+                    contra="";
                 }
 
             }
